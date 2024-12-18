@@ -1,0 +1,42 @@
+
+.sliderCont{
+    margin-top: 16px;
+    height: 8px;
+    position: relative;
+    
+    .sliderTumb{
+        z-index: 1;
+        cursor: grab;
+        border-radius: 100px;
+        top: 50%;
+        left: 100%;
+        // transform: translate(-100%, -50%); // set by js
+        position: absolute;
+        width: 100px; // fixedWidth
+        height: 30px;
+        background: #993DE1;
+        color: white;
+
+        display: grid;
+        place-items: center;
+
+    }
+
+    .slider{
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        background: #1B1B1B;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    
+        .sliderTrack{
+            height: 100%;
+            position: absolute;
+            // width: 50%; // set by js
+            background: #3D2756;
+        }
+
+    }
+}

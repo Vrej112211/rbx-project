@@ -1,0 +1,32 @@
+.recomentedOptionsCont {
+    $buttonColor: #953BDB;
+    $buttonBorderColor: #4E3170;
+
+    margin-top: 16px;
+    margin-bottom: 15px;
+
+    button {
+        // height: 30px;
+        padding: 6px 14px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        /* padding: 0.6em 1.2em; */
+        font-size: 15px;
+        font-weight: 500;
+        font-family: inherit;
+        /* background-color: #1a1a1a; */
+        cursor: pointer;
+        /* transition: border-color 0.25s; */
+        margin-right: 8px;
+        border: 1px solid $buttonBorderColor;
+        color: $buttonColor;
+        background: transparent;
+        transition: .3s;
+
+        &:hover{
+            color: white;
+            background: $buttonColor;
+            border: 1px solid $buttonColor;
+        }
+    }
+}

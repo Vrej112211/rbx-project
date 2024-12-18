@@ -1,0 +1,58 @@
+.buyRbxCoinsBox{
+    background: rgb(242, 242, 179);
+    max-width: 431px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    color: #A2A2A2;
+
+    .toolsCont{
+        // $bgColor: #171717;   
+        border: 1px solid #1B1B1B;
+
+        border-radius: 20px;
+        padding: 22px 22px 26px 22px;
+        background: #171717;
+        display: flex;
+        flex-direction: column;
+
+        .firstText{
+            margin-bottom: 16px;
+        }
+        .secondTextCont{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .thirdTextCont{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 37px;
+
+            .infoText{
+                color: #993DE1;
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .submitBtn{
+        padding: 12px 28px;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 65px;
+        transition: .3s;
+        cursor: pointer;
+        border: none;
+        color: white;
+        margin-top: 10px;
+
+        background: #993DE1;
+        &:hover{
+            background: #6504B1;
+        }
+    }
+    
+}

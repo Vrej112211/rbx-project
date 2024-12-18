@@ -1,0 +1,62 @@
+
+.inputCont{
+    $borderRadius: 15px;
+    $inputBorderColor: #1B1B1B;
+    $inputBorderColor_focus: #953BDB;
+    $inputContBg_focus: #4E3170;
+    $currencyBg: #1b1b1b;
+    $inputBg: #171717;
+
+    // background: transparent;
+    padding: 3px;
+    border-radius: $borderRadius;
+    &.active{
+        background: $inputContBg_focus;
+    }
+
+    .input{
+        position: relative;
+        // background: yellow;
+        display: flex;
+        flex-direction: column;
+        // display: grid;
+        // grid-auto-flow: column;
+        // grid-template-columns: 1fr 30px;
+        // place-items: center;
+
+        $currencyWidth: 33px;
+        input{
+            border: 1px solid $inputBorderColor;
+            border-radius: $borderRadius;
+            background: $inputBg;
+            padding: 0 70px 0 17px;
+            height: 70px;
+            outline: none;
+
+            font-weight: 700;
+            font-size: 20px;
+            transition: .3s;
+            color: white;
+            &:focus{
+                border: 1px solid $inputBorderColor_focus;
+            }
+        }
+        .currency{
+            user-select: none;
+            // pointer-events: none;
+            position: absolute;
+            top: 50%; transform: translateY(-50%);
+            right: 19px;
+            
+            border-radius: 50%;
+
+            font-size: 15px;
+            font-weight: 800;
+            width: $currencyWidth;
+            height: $currencyWidth;
+            display: grid;
+            place-items: center;
+            background: $currencyBg;
+        }
+    }
+}
